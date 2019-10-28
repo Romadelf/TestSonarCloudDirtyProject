@@ -15,5 +15,16 @@ public class PersonEntity {
     @Column(name = "firstName") String Prenom;
     String NOMFAMILLE;
     int age;
+    public String getPrenom() {
+        return Prenom;
+    }
+    public String getNOMFAMILLE() {
+        return NOMFAMILLE;
+    }
+    public int getAge() {
+        return age;
+    }
+    
+    
 
 }

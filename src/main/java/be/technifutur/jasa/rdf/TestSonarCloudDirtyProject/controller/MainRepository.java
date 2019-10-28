@@ -1,5 +1,7 @@
 package be.technifutur.jasa.rdf.TestSonarCloudDirtyProject.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -25,6 +27,11 @@ public class MainRepository {
 	pers3.Prenom = "Piedur";
 	pers3.age = 25;
 	nameRepo.save(pers3);
+    }
+
+    public List<PersonEntity> getEveryOne() {
+	// TODO Auto-generated method stub
+	return nameRepo.findAll();
     }
 
 }

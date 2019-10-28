@@ -1,4 +1,4 @@
-package be.technifutur.jasa.rdf.TestSonarCloudDirtyProject.controller;
+package be.technifutur.jasa.rdf.testsonarclouddirtyproject.controller;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

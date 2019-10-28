@@ -1,4 +1,4 @@
-package be.technifutur.jasa.rdf.TestSonarCloudDirtyProject;
+package be.technifutur.jasa.rdf.testsonarclouddirtyproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TestSonarCloudDirtyProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestSonarCloudDirtyProjectApplication.class, args);
+		SpringApplication.run(TestSonarCloudDirtyProjectApplication.class);
 	}
 
 }

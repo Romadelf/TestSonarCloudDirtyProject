@@ -1,4 +1,4 @@
-package be.technifutur.jasa.rdf.TestSonarCloudDirtyProject.controller;
+package be.technifutur.jasa.rdf.testsonarclouddirtyproject.controller;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,14 +12,14 @@ import javax.persistence.Table;
 public class PersonEntity {
     
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
-    @Column(name = "firstName") String Prenom;
-    String NOMFAMILLE;
+    @Column(name = "firstName") String prenom;
+    String nomDeFamille;
     int age;
     public String getPrenom() {
-        return Prenom;
+        return prenom;
     }
     public String getNOMFAMILLE() {
-        return NOMFAMILLE;
+        return nomDeFamille;
     }
     public int getAge() {
         return age;

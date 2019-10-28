@@ -1,6 +1,5 @@
 package be.technifutur.jasa.rdf.testsonarclouddirtyproject.controller;
 
-import java.lang.System.Logger;
 import java.util.List;
 
 import org.slf4j.LoggerFactory;
@@ -29,8 +28,9 @@ public class ControllerName {
     public ResponseEntity<List<PersonEntity>> all() {
 	List<PersonEntity> payload = repo.getEveryOne();
 	int size = payload.size();
-	log.debug("" + size);
-	log.debug(size == 0 ? "quedal" : payload.get(size -1).nomDeFamille);
+	log.debug("Number of people: {}", size);
+	String nomDeFamilleDeLaDernierePersonne = size == 0 ? "quedal" : payload.get(size -1).nomDeFamille;
+	log.debug("Nom de famille de la dernière personne: {}", nomDeFamilleDeLaDernierePersonne);
 	// on a aussi log.info(...) qui est popu, puis log.warn(..), log.error(...) et aussi log.trace(...) pour les details
 	return ResponseEntity.ok(payload);
     }

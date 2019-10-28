@@ -1,11 +1,12 @@
 package be.technifutur.jasa.rdf.TestSonarCloudDirtyProject.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class MainRepository {
     
-    NameRepository nameRepo;
+    @Autowired NameRepository nameRepo;
 
     public void init() {
 	// TODO Auto-generated method stub
